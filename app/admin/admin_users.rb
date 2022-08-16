@@ -1,4 +1,5 @@
 ActiveAdmin.register AdminUser do
+  before_action :skip_sidebar!, :only => :index
   permit_params :email, :password, :password_confirmation
 
   index do

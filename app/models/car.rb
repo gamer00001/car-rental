@@ -3,5 +3,5 @@ class Car < ApplicationRecord
     validates_attachment :image, content_type: { content_type:     ["image/jpg", "image/jpeg", "image/png"] }
 
     belongs_to :category
-
+    has_many :bookings
 end
