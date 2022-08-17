@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2022_08_16_200324) do
+ActiveRecord::Schema.define(version: 2022_08_17_173615) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -39,6 +39,10 @@ ActiveRecord::Schema.define(version: 2022_08_16_200324) do
     t.bigint "driving_license_image_file_size"
     t.datetime "driving_license_image_updated_at"
     t.bigint "car_id"
+    t.date "start_date"
+    t.date "end_date"
+    t.bigint "total_price"
+    t.bigint "advance_booking_price"
     t.index ["car_id"], name: "index_bookings_on_car_id"
   end
 

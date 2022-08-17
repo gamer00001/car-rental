@@ -7,13 +7,15 @@ ActiveAdmin.register Booking do
   #
   # Uncomment all parameters which should be permitted for assignment
   #
-  permit_params :first_name, :last_name, :email, :mobile, :driving_license_image, :car_id
+  permit_params :first_name, :last_name, :email, :mobile, :driving_license_image, :car_id, :start_date, :end_date
   form :html => { :enctype => "multipart/form-data" } do |f|
     f.inputs "Booking Details" do
      f.input :first_name, input_html: {required: true} 
      f.input :last_name, input_html: {required: true} 
      f.input :email, input_html: {required: true, type: "email"} 
      f.input :mobile, input_html: {required: true} 
+     f.input :start_date, input_html: {required: true, type: "date"} 
+     f.input :end_date, input_html: {required: true, type: "date"} 
      f.input :car_id , :as => :select, :collection => Car.all.collect {|car| [car.name, car.id] }
      f.input :driving_license_image, :as => :file, input_html: {required: true} 
    end
@@ -26,6 +28,10 @@ ActiveAdmin.register Booking do
     column :last_name
     column :email
     column :mobile
+    column :start_date
+    column :end_date
+    column :total_price
+    column :advance_booking_price
     column :car_id do |booking|
       Car.find(booking.car_id).name
     end
@@ -42,6 +48,8 @@ ActiveAdmin.register Booking do
       row :last_name
       row :email
       row :mobile
+      row :total_price
+      row :advance_booking_price
       row :car_id do 
         Car.find(ad.car_id).name
       end
