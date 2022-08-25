@@ -1,2 +1,6 @@
 class ApplicationController < ActionController::Base
+
+    def sign_in_path_for(resource)
+        "/admin/dashboard"
+    end
 end

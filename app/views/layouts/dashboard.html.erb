@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" data-layout="vertical" data-topbar="light" data-sidebar="dark" data-sidebar-size="lg" data-sidebar-image="none">
+  <head>
+    <title>CarRental</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+    <%= javascript_pack_tag 'layout', 'data-turbolinks-track': 'reload' %>
+
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= stylesheet_link_tag 'bootstrap.min', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= stylesheet_link_tag 'icons.min', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= stylesheet_link_tag 'app.min', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= stylesheet_link_tag 'custom.min', media: 'all', 'data-turbolinks-track': 'reload' %>
+
+    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+
+<% if notice %>
+<p class="alert alert-success"><%= notice %></p>
+<% end %>
+<% if alert %>
+<p class="alert alert-danger"><%= alert %></p>
+<% end %>
+<div id="layout-wrapper">
+    <%= render "layouts/header"%>
+    <%= render "layouts/left_sidebar"%>
+
+    <%= yield %>
+</div>
+    <%= javascript_pack_tag 'bootstrap.js', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_pack_tag 'simplebar.js', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_pack_tag 'waves.js', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_pack_tag 'feather.js', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_pack_tag 'lord-icon-2.js', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_pack_tag 'apexcharts.js', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_pack_tag 'dashboard-crm.js', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_pack_tag 'app.js', 'data-turbolinks-track': 'reload' %>
+
+  </body>
+</html>
