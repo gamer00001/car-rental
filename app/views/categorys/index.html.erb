@@ -1,0 +1,71 @@
+<div class="row">
+  <div class="col-12">
+    <div class="page-title-box d-sm-flex align-items-center justify-content-between">
+      <h4 class="mb-sm-0">Category Details</h4>
+
+      <div class="page-title-right">
+        <ol class="breadcrumb m-0">
+          <li class="breadcrumb-item"><a href="<%=categorys_path%>">Category</a></li>
+        </ol>
+      </div>
+
+    </div>
+  </div>
+</div>
+<div class="row">
+  <div class="col-lg-12">
+    <div class="card">
+      <div class="card-header align-items-center d-flex">
+        <h4 class="card-title mb-0 flex-grow-1">Category</h4>
+        <div class="flex-shrink-0">
+          <div class="form-check form-switch form-switch-right form-switch-md">
+            <a href="<%=new_category_path%>"><button type="button" class="btn btn-secondary waves-effect waves-light"
+                style="background: #3577f1">Add New category</button></a>
+          </div>
+        </div>
+      </div><!-- end card header -->
+
+      <div class="card-body">
+        <div class="live-preview">
+          <div class="row">
+            <div class="col-xl-12">
+              <div class="table-responsive mt-4 mt-xl-0">
+                <table class="table table-white table-striped table-nowrap align-middle mb-0">
+                  <thead>
+                    <tr>
+                      <th scope="col">ID</th>
+                      <th scope="col">name</th>
+                      <th scope="col">Action</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <% @categories.each do |category| %>
+                    <tr>
+                      <td class="fw-medium"><%= category.id%></td>
+                      <td><%=link_to category_path(category) do%><%= category.name%> <%end%></td>
+                      <td>
+                        <div class="hstack gap-3 flex-wrap">
+                        <%=link_to edit_category_path(category),  class: "link-success fs-15" do %>
+                          <i class="ri-edit-2-line"></i>
+                        <%end%>
+                          <%= link_to(category_path(category),
+                            method: :delete, class: "link-danger fs-15", data: { confirm: 'Are you sure?', disable_with: 'loading...' }) do %>
+                          <i class="ri-delete-bin-line"></i>
+                          <%end%>
+                        </div>
+                      </td>
+                    </tr>
+                    <%end%>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+            <!--end col-->
+          </div>
+          <!--end row-->
+        </div>
+      </div><!-- end card-body -->
+    </div><!-- end card -->
+  </div>
+  <!-- end col -->
+</div>
