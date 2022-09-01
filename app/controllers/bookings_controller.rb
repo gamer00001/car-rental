@@ -1,4 +1,5 @@
 class BookingsController < ApplicationController
+    before_action :authenticate_admin_user!
     layout "dashboard"
     before_action :set_booking, except: [:index, :create]
 

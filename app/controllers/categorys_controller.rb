@@ -1,5 +1,6 @@
 class CategorysController < ApplicationController
     layout "dashboard"
+    before_action :authenticate_admin_user!
     before_action :set_category, except: [:index, :create]
 
     def index
