@@ -1,0 +1,98 @@
+<div class="row">
+    <div class="col-12">
+        <div class="page-title-box d-sm-flex align-items-center justify-content-between">
+            <h4 class="mb-sm-0">Add New Car</h4>
+
+            <div class="page-title-right">
+                <ol class="breadcrumb m-0">
+                    <li class="breadcrumb-item"><a href="<%=cars_path%>">Cars</a></li>
+                    <li class="breadcrumb-item active">New</li>
+                </ol>
+            </div>
+
+        </div>
+    </div>
+</div>
+<!-- end page title -->
+
+<div class="row">
+    <div class="col-xxl-6">
+        <div class="card">
+            <div class="card-header align-items-center d-flex">
+                <h4 class="card-title mb-0 flex-grow-1">Enter Car Details</h4>
+                <!-- <div class="flex-shrink-0">
+                    <div class="form-check form-switch form-switch-right form-switch-md">
+                        <label for="form-grid-showcode" class="form-label text-muted">Show Code</label>
+                        <input class="form-check-input code-switcher" type="checkbox" id="form-grid-showcode">
+                    </div>
+                </div>-->
+            </div><!-- end card header -->
+
+            <div class="card-body">
+                <div class="live-preview">
+                    <form action="<%=action_name == 'new' ? cars_path : car_path(@car)%>" method="POST" enctype="multipart/form-data">
+                        <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
+                        <input type="hidden" name="_method" value="<%= action_name == 'new' ?  'POST' : 'patch'%>">
+
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="mb-3">
+                                    <label for="name" class="form-label">Name</label>
+                                    <input type="text" class="form-control" placeholder="Enter Car Name"
+                                        id="name" value="<%=@car.name%>" style="width: -webkit-fill-available" name="car[name]">
+                                </div>
+                            </div>
+                            <!--end col-->
+                            <div class="col-md-6">
+                                <div class="mb-3">
+                                    <label for="Model" class="form-label">Model</label>
+                                    <input type="number" class="form-control" placeholder="Enter Car Model Number" value="<%=@car.model%>"
+                                        id="Model" style="width: -webkit-fill-available" name="car[model]">
+                                </div>
+                            </div>
+                            <!--end col-->
+                            <div class="col-md-6">
+                                <div class="mb-3">
+                                    <label for="registrationNumber" class="form-label">Registration Number</label>
+                                    <input type="text" class="form-control" value="<%=@car.number%>" placeholder="Enter Registration Number"
+                                        id="registrationNumber" style="width: -webkit-fill-available" name="car[number]">
+                                </div>
+                            </div>
+                            <!--end col-->
+                            <div class="col-md-6">
+                                <div class="mb-3">
+                                    <label for="price" class="form-label">Price(AED)</label>
+                                    <input type="number" class="form-control" value="<%=@car.price%>" placeholder="599" id="price"
+                                        style="width: -webkit-fill-available" name="car[price]">
+                                </div>
+                            </div>
+                            <!--end col-->
+                            <div class="col-md-6">
+                                <div class="mb-3">
+                                    <label for="category" class="form-label">Choose Category</label>
+                                    <%= select_tag(:category_id, options_for_select(Category.all.collect {|category| [category.name, category.id] }, selected: @car.category_id), id: "category", class: "form-select", name:"car[category_id]") %>
+                                </div>
+                            </div>
+                            <!--end col-->
+
+                            <div class="col-md-6">
+                                <label for="formFile" class="form-label">Image</label>
+                                <input class="form-control" type="file" name="car[image]" valeu="" id="formFile">
+                            </div>
+
+                            <!--end col-->
+                            <div class="col-lg-12">
+                                <div class="text-end">
+                                    <button type="submit" class="btn btn-primary"
+                                        style="background: #405189 ">Submit</button>
+                                </div>
+                            </div>
+                            <!--end col-->
+                        </div>
+                        <!--end row-->
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div> <!-- end col -->
+</div>
