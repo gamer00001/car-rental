@@ -1,5 +1,6 @@
 class ApplicationController < ActionController::Base
 
+    protected
     def sign_in_path_for(resource)
         cars_path
     end
