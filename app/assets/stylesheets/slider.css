@@ -45,28 +45,28 @@
 
 .bg-slide-1 {
     opacity: 1;
-    background: url("../images/hr1.png") no-repeat center center;
+    background: url("hr1.png") no-repeat center center;
     background-size: cover;
 }
 
 .bg-slide-2 {
     -webkit-animation-delay: 8s;
     animation-delay: 8s;
-    background: url("../images/hr2.png") no-repeat center center;
+    background: url("hr2.png") no-repeat center center;
     background-size: cover;
 }
 
 .bg-slide-3 {
     -webkit-animation-delay: 16s;
     animation-delay: 16s;
-    background: url("../images/hr3.png") no-repeat center center;
+    background: url("hr3.png") no-repeat center center;
     background-size: cover;
 }
 
 .bg-slide-4 {
     -webkit-animation-delay: 24s;
     animation-delay: 24s;
-    background: url("../images/hr4.png") no-repeat center center;
+    background: url("hr1.png") no-repeat center center;
     background-size: cover;
 }
 

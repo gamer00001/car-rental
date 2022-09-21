@@ -1,6 +1,8 @@
 /* Demo purposes only */
-$(".hover").mouseleave(
-  function() {
-    $(this).removeClass("hover");
-  }
-);
+document.addEventListener("load", ()=>{
+  $(".hover").mouseleave(
+    function() {
+      $(this).removeClass("hover");
+    }
+  );
+})

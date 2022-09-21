@@ -158,9 +158,6 @@ background: linear-gradient(112deg, rgba(34,37,42,1) 0%, rgba(34,37,42,1) 22%, r
     outline: none;
     border-radius: 0.25rem;
     transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
-	::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
-  color: #fff;
-  opacity: 1; /* Firefox */
 }
 
 :-ms-input-placeholder { /* Internet Explorer 10-11 */
@@ -170,7 +167,7 @@ background: linear-gradient(112deg, rgba(34,37,42,1) 0%, rgba(34,37,42,1) 22%, r
 ::-ms-input-placeholder { /* Microsoft Edge */
   color: #fff;
 } 	
-}
+
 
 .hadding{ text-align: center; padding:0 0 30px 0px}
 .hadding h4{font-size:35px; font-weight:700; color:#212121}
@@ -184,7 +181,7 @@ background: linear-gradient(112deg, rgba(34,37,42,1) 0%, rgba(34,37,42,1) 22%, r
 .abt_text h4{ font-size: 36px; color: #707070; font-weight: 900;}
 .abt_text p{ font-size:18px; color: #707070; font-weight: normal;}
 
-.feat_cont{ background:#46444F url("../images/feeatbg.png")no-repeat center top fixed; padding:4% 0px;}
+.feat_cont{ background:#46444F url("feeatbg.png")no-repeat center top fixed; padding:4% 0px;}
 .feat{text-align: center;}
 .feat img{ margin:0px 0 15px 0px;}
 .feat h4{font-size:20px; color:#fff; font-weight: bold;}
@@ -245,7 +242,7 @@ code {
 }
 .btn-link:hover{color: #fff!important;  border:transparent!important;}
 
-.nextpagebg{ background:#363636 url("../images/npbg.png") no-repeat center top;}
+.nextpagebg{ background:#363636 url("npbg.png") no-repeat center top;}
 .filter_bg{ background:#F5F5F5; padding:30px; border-radius:15px; margin:60px 0 0 0;}
 .cars{ background:#F5F5F5; padding: 15px; border-radius: 15px; margin:15px 0px; display: block; text-decoration: none;}
 .img-round{ border-radius:15px;}
@@ -310,19 +307,7 @@ code {
     outline: none;
     border-radius:8px;
     transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
-    : :;
-    placeholder {: ;
-    color: #fff;
-    opacity: 1;
-    }: ;
-    : ;
-    -ms-input-placeholder {: ;
-    color: #fff;
-    }: ;
-    : :;
-    -ms-input-placeholder {: ;
-    color: #fff;
-    }: ;
+   
 }
 
 .title{ font-size:17px; color: #707070; font-weight: normal; margin: 0 0 8px 0}
