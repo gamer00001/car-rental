@@ -221,11 +221,10 @@ code {
     color: #ee3131;
     word-wrap: break-word;
 }
-.abt_ftr{}
+
 .abt_ftr img{ margin:0px 0 10px 0px;}
 .abt_ftr p{ font-size:17px; color: #fff; font-weight: normal}
 
-.abt_link{}
 .abt_link ul{ margin: 0px; padding:0px;}
 .abt_link ul li{ list-style: none; line-height: 22px; padding:7.5px 0px; }
 .abt_link ul li a{ font-size: 16px; font-weight: normal; text-decoration: none; color: #fff; border-left:solid 2px #D93030;}

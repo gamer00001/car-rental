@@ -55,13 +55,13 @@ img{
 .filter-item li.active{
     width: 50%;
     padding: 2px;
-  <!--  transition: all 0.5s ease;-->
+ transition: all 0.5s ease;
 }
 
 .filter-item li.delete{
     width: 0%;
     padding: 0;
-   <!-- transition: all 0.5s ease;-->
+    transition: all 0.5s ease;
 }
 
 .filter-item img{
