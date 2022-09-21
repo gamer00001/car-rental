@@ -11,7 +11,6 @@ class BookingsController < ApplicationController
     end
 
     def create
-        byebug
         @booking = Booking.create(booking_params)
         if @booking.errors.size == 0 
             redirect_to @booking
