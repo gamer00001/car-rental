@@ -3,6 +3,7 @@ Rails.application.routes.draw do
   # ActiveAdmin.routes(self)
   # devise_for :users
   root "pages#index"
+  get "car_detail", to: "pages#car_detail"
   resources :cars
   resources :categorys
   resources :bookings

@@ -3,4 +3,7 @@ class PagesController < ApplicationController
 
     def index
     end
+
+    def car_detail
+    end
 end
