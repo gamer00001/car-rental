@@ -41,11 +41,6 @@ body div.ui-slider-range.ui-widget-header {
 	border-radius: 50%;
 	font-size:21px;
 	border: none !important;
-	/* box-shadow: 0 0 7px #306473; */
-	&:
-	focus{
-		outline: none;
-	}
 }
 span.ui-slider-handle.ui-corner-all.ui-state-default:focus {
     outline: none;
