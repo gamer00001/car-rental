@@ -1,59 +1,22 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <title>CarRental</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
 
-<head>
-  <title>CarRental</title>
-  <%= csrf_meta_tags %>
-  <%= csp_meta_tag %>
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
 
-  <%= stylesheet_link_tag 'bootstrap.min', media: 'all', 'data-turbolinks-track': 'reload' %>
-  <%= stylesheet_link_tag 'style', media: 'all', 'data-turbolinks-track': 'reload' %>
-  <%= stylesheet_link_tag 'slider' %>
-  <%= stylesheet_link_tag 'hover', media: 'all', 'data-turbolinks-track': 'reload' %>
-  <%= stylesheet_link_tag 'gallery', media: 'all', 'data-turbolinks-track': 'reload' %>
-  <%#= stylesheet_link_tag 'carousel' %>
-  <%#= stylesheet_link_tag 'range' %>
-  <%#= stylesheet_link_tag 'subgall' %>
-  <%#= stylesheet_link_tag 'timer.css' %>
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.css" rel="stylesheet">
+  <body>
 
-  <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
-
-
-
-
-</head>
-
-<body>
-
-  <% if notice %>
-  <p class="alert alert-success"><%= notice %></p>
-  <% end %>
-  <% if alert %>
-  <p class="alert alert-danger"><%= alert %></p>
-  <% end %>
-  <%=render "layouts/nav_header"%>
-  <%= yield %>
-
-  <%=render "layouts/about"%>
-  <%=render "layouts/footer"%>
-
-
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
-    integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous">
-  </script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
-    integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous">
-  </script>
-
-  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
-  <script src='https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.js'></script>
-  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/2.2.2/isotope.pkgd.min.js'></script>
-
-  <%= javascript_pack_tag "hover.js" %>
-  <%= javascript_pack_tag "gallery.js" %>
-
-</body>
-
+<% if notice %>
+<p class="alert alert-success"><%= notice %></p>
+<% end %>
+<% if alert %>
+<p class="alert alert-danger"><%= alert %></p>
+<% end %>
+    <%= yield %>
+  </body>
 </html>
