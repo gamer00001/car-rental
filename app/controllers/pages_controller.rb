@@ -6,4 +6,7 @@ class PagesController < ApplicationController
 
     def car_detail
     end
+
+    def car_show_detail
+    end
 end
