@@ -67,7 +67,6 @@
        <ul class="filter-item">
         <% @cars.each do |car| %>
           <li data-item="car1">
-          <%byebug%>
             <a href=<%="car_show_detail/#{car.id}"%>>
               <%=image_tag car.image.url  %>
             </a>
