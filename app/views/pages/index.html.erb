@@ -59,28 +59,20 @@
 
        <ul class="filter-menu">
          <li data-target="all">All</li>
-         <li data-target="car1">Business Cars</li>
-         <li data-target="car2">Economy Cars</li>
-         <li data-target="car3">Super Cars</li>
+         <li data-target="car1">Prestige & Business Cars</li>
          <li data-target="car4">SUV Cars</li>
          <li data-target="car5">Sports Cars</li>
-         <li data-target="car6">Convertible cars</li>
-         <li data-target="car7">Luxury cars</li>
        </ul>
 
        <ul class="filter-item">
-         <li data-item="car1"><a href="#"><%=image_tag "cr1.jpg"  %></a></li>
-         <li data-item="car2"><a href="#"><%=image_tag "cr2.jpg"  %></a></li>
-         <li data-item="car3"><a href="#"><%=image_tag "cr3.jpg"  %></a></li>
-         <li data-item="car4"><a href="#"><%=image_tag "cr4.jpg"  %></a></li>
-         <li data-item="car5"><a href="#"><%=image_tag "cr5.jpg"  %></a></li>
-         <li data-item="car6"><a href="#"><%=image_tag "cr6.jpg"  %></a></li>
-         <li data-item="car7"><a href="#"><%=image_tag "cr7.jpg"  %></a></li>
-         <li data-item="car3"><a href="#"><%=image_tag "cr8.jpg"  %></a></li>
-         <li data-item="car4"><a href="#"><%=image_tag "cr9.jpg"  %></a></li>
-         <li data-item="car5"><a href="#"><%=image_tag "cr10.jpg"  %></a></li>
-         <li data-item="car6"><a href="#"><%=image_tag "cr11.jpg"  %></a></li>
-         <li data-item="car7"><a href="#"><%=image_tag "cr12.jpg"  %></a></li>
+        <% @cars.each do |car| %>
+          <li data-item="car1">
+          <%byebug%>
+            <a href=<%="car_show_detail/#{car.id}"%>>
+              <%=image_tag car.image.url  %>
+            </a>
+          </li>
+         <%end%>
        </ul>
 
      </div>

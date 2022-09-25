@@ -4,7 +4,7 @@ Rails.application.routes.draw do
   # devise_for :users
   root "pages#index"
   get "car_detail", to: "pages#car_detail"
-  get "car_show_detail", to: "pages#car_show_detail"
+  get "car_show_detail/:id", to: "pages#car_show_detail"
   resources :cars
   resources :categorys
   resources :bookings

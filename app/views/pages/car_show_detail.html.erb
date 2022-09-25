@@ -4,7 +4,7 @@
             <div class="row">
                 <div class="col-md-4 col-12 image">
                     <div class="img-wrapper">
-                        <a href="cr1.jpg"><%=image_tag "cr1.jpg", class: "img-responsive" %></a>
+                        <a href=""><%=image_tag @car.image.url, class: "img-responsive" %></a>
                         <div class="img-overlay">
                             <i class="fa fa-plus-circle" aria-hidden="true"></i>
                         </div>
@@ -12,14 +12,14 @@
                 </div>
                 <div class="col-md-4 col-12 image">
                     <div class="img-wrapper">
-                        <a href="cr0.jpg"><%=image_tag "cr0.jpg", class:"img-responsive"%></a>
+                        <a href="cr0.jpg"><%=image_tag @car.image.url, class:"img-responsive"%></a>
                         <div class="img-overlay">
                             <i class="fa fa-plus-circle" aria-hidden="true"></i>
                         </div>
                     </div>
                     <div class="clearfix"></div>
                     <div class="img-wrapper">
-                        <a href="cr0.jpg"><%=image_tag "cr0.jpg", class:"img-responsive"%></a>
+                        <a href="cr0.jpg"><%=image_tag @car.image.url, class:"img-responsive"%></a>
                         <div class="img-overlay">
                             <i class="fa fa-plus-circle" aria-hidden="true"></i>
                         </div>
@@ -27,7 +27,7 @@
                 </div>
                 <div class="col-md-4 col-12">
                     <div class="img-wrapper">
-                        <a href="cr1.jpg"><%=image_tag "cr1.jpg", class:"img-responsive"%></a>
+                        <a href="cr1.jpg"><%=image_tag @car.image.url, class:"img-responsive"%></a>
                         <div class="img-overlay">
                             <i class="fa fa-plus-circle" aria-hidden="true"></i>
                         </div>
@@ -93,7 +93,7 @@
                         <div class="col-md-4 col-12">
                             <a href="#" class="pricing">
                                 <h6>Daily</h6>
-                                <h4>4,000 AED</h4>
+                                <h4><%=@car.price%> AED</h4>
                             </a>
                         </div>
                         <div class="col-md-4 col-12">
@@ -443,7 +443,7 @@
                     <div class="mb-3">
                         <span class="price002">6,200 AED</span>
                         <div class="clearfix"></div>
-                        <span class="price001">4,000 AED / DAY</span>
+                        <span class="price001"><%=@car.price%>  AED / DAY</span>
                     </div>
 
                     <div class="mb-3">
