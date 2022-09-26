@@ -106,8 +106,12 @@
              <p>Are you looking for an easy car hire in Dubai?</p>
              <div class="form_bg">
                <div class="input-group">
-                 <input type="text" class="form-control" placeholder="Search a car for rent, ex. Lamborghini Huracan Evo..." aria-label="Search a car for rent, ex. Lamborghini Huracan Evo..." aria-describedby="button-addon2">
-                 <button type="button" class="btn btn-danger"><%=image_tag "search.svg"%> Search</button>
+            
+                 <form action= "/car_detail" method= "get">
+                 <%= hidden_field_tag :authenticity_token, form_authenticity_token %>
+                 <input type="text" class="form-control" placeholder="Search a car for rent, ex. Lamborghini Huracan Evo..." aria-label="Search a car for rent, ex. Lamborghini Huracan Evo..." aria-describedby="button-addon2" name="search">
+                 <button class="btn btn-danger"><%=image_tag "search.svg"%>Search<button>  
+                </form>  
                </div>
              </div>
            </div>
@@ -220,12 +224,11 @@
                     <div class="slogan0 col-md-6 col-12">
                         <div class="form_bg">
                             <div class="input-group">
-                                <input type="text" class="form-control"
-                                    placeholder="Search a car for rent, ex. Lamborghini Huracan Evo..."
-                                    aria-label="Search a car for rent, ex. Lamborghini Huracan Evo..."
-                                    aria-describedby="button-addon2">
-                                <button type="button" class="btn btn-danger"><%=image_tag "search.svg"%> 
-                                    Search</button>
+                                 <form action= "/car_detail" method= "get">
+                                    <%= hidden_field_tag :authenticity_token, form_authenticity_token %>
+                                    <input type="text" class="form-control" placeholder="Search a car for rent, ex. Lamborghini Huracan Evo..." aria-label="Search a car for rent, ex. Lamborghini Huracan Evo..." aria-describedby="button-addon2" name= "search">
+                                    <input type="submit" class="btn btn-danger"><%=image_tag "search.svg"%>  
+                                  </form>  
                             </div>
                         </div>
                     </div>

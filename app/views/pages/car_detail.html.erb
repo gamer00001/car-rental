@@ -2,317 +2,68 @@
     <div class="filter_bg">
         <div class="row">
             <div class="col-md-2 col-12">
-                <select class="form-select mb-2" aria-label="Default select example" style="background-color: white">
-                    <option selected>Choose A Brand</option>
-                    <option value="1">Audi</option>
-                    <option value="2">Audi</option>
-                    <option value="3">Audi</option>
-                    <option value="3">Audi</option>
-                    <option value="3">Audi</option>
-                    <option value="3">Audi</option>
-                    <option value="3">Audi</option>
-                    <option value="3">Audi</option>
-                    <option value="3">Audi</option>
-                    <option value="3">Audi</option>
-                    <option value="3">Audi</option>
-                    <option value="3">Audi</option>
-                    <option value="3">Audi</option>
-                    <option value="3">Audi</option>
-                    <option value="3">Audi</option>
+                <select class="form-select mb-2" aria-label="Default select example" style="background-color: white" id="brand">
+                    <option selected value="0">Choose A Brand</option>
+                    <option value="Audi">Audi</option>
+                    <option value="Abarth">Abarth</option>
+                    <option value="BMW">BMW</option>
+                    <option value="Chevrolet">Chevrolet</option>
+                    <option value="Dodge">Dodge</option>
+                    <option value="Ford">Ford</option>
+                    <option value="Honda">Honda</option>
+                    <option value="Hongqi">Hongqi</option>
+                    <option value="Nissan">Nissan</option>
+                    <option value="Lexus">Lexus</option>
+                    <option value="Renault">Renault</option>
+                    <option value="Hyundai">Hyundai</option>
+                    <option value="Toyota">Toyota</option>
+                    <option value="GAC">GAC</option>
+                    <option value="Suzuki">Suzuki</option>
+                    <option value="Mitsubishi">Mitsubishi</option>
+                    <option value="Lamborghini">Lamborghini</option>
+                    <option value="Ferrari">Ferrari</option>
+                    <option value="McLaren">McLaren</option>
+                    <option value="Tesla">Tesla</option>
                 </select>
             </div>
             <div class="col-md-3 col-12">
-                <select class="form-select mb-2" aria-label="Default select example" style="background-color: white">
-                    <option selected>Choose A Model</option>
-                    <option value="1">Audi</option>
-                    <option value="2">Audi</option>
-                    <option value="3">Audi</option>
-                    <option value="3">Audi</option>
-                    <option value="3">Audi</option>
-                    <option value="3">Audi</option>
-                    <option value="3">Audi</option>
-                    <option value="3">Audi</option>
-                    <option value="3">Audi</option>
-                    <option value="3">Audi</option>
-                    <option value="3">Audi</option>
-                    <option value="3">Audi</option>
-                    <option value="3">Audi</option>
-                    <option value="3">Audi</option>
-                    <option value="3">Audi</option>
+                <select class="form-select mb-2" aria-label="Default select example" style="background-color: white" id="model">
+                    <option selected value="0">Choose A Model</option>
+                    <option value="2015">2015</option>
+                    <option value="2016">2016</option>
+                    <option value="2017">2017</option>
+                    <option value="2018">2018</option>
+                    <option value="2019">2019</option>
+                    <option value="2020">2020</option>
+                    <option value="2021">2021</option>
+                    <option value="2022">2022</option>
                 </select>
             </div>
             <div class="col-md-3 col-12">
-                <select class="form-select mb-2" aria-label="Default select example" style="background-color: white">
-                    <option selected>Body Type</option>
-                    <option value="1">Audi</option>
-                    <option value="2">Audi</option>
-                    <option value="3">Audi</option>
-                    <option value="3">Audi</option>
-                    <option value="3">Audi</option>
-                    <option value="3">Audi</option>
-                    <option value="3">Audi</option>
-                    <option value="3">Audi</option>
-                    <option value="3">Audi</option>
-                    <option value="3">Audi</option>
-                    <option value="3">Audi</option>
-                    <option value="3">Audi</option>
-                    <option value="3">Audi</option>
-                    <option value="3">Audi</option>
-                    <option value="3">Audi</option>
+                <select class="form-select mb-2" aria-label="Default select example" style="background-color: white" id="type">
+                    <option selected value="0">Body Type</option>
+                    <option value="Sedan">Sedan</option>
+                    <option value="Hatchback">Hatchback</option>
+                    <option value="MUV/SUV">MUV/SUV</option>
+                    <option value="Coupe">Coupe</option>
+                    <option value="Convertible">Convertible</option>
+                    <option value="Wagon">Wagon</option>
+                    <option value="Van">Van</option>
+                    <option value="Jeep">Jeep</option>
                 </select>
             </div>
             <div class="col-md-3 col-12 mb-4">
                 <div id="slider"></div>
             </div>
-            <div class="col-md-1 col-12 mb-2"><button type="button" class="btn btn-danger">Apply</button></div>
+            <div class="col-md-1 col-12 mb-2"><button type="button" class="btn btn-danger" onclick="car_detail()">Apply</button></div>
         </div>
     </div>
 </div>
 
 
-
-
-<div class="container">
-    <div class="row">
-        <div class="col-md-6 col-12">
-            <a href="#" class="cars">
-                <div class="row">
-                    <div class="col-md-4 col-12"><%=image_tag "car1.jpg", class: "img-fluid img-round"%></div>
-                    <div class="col-md-8 col-12">
-                        <div class="cars_details">
-                            <span class="badge bg-success">THIS CAR IS AVAILABLE</span>
-                            <span class="badge bg-secondary">5 PEOPLE ARE iNTERESTED</span>
-                            <div class="clearfix"></div>
-                            <h4>Black Cadillac Escalade, 2021</h4>
-                            <p>Refundable deposit 5,000 AED, Allowed mileage<br>
-                                250 km a day, Free delivery</p>
-                            <span class="price1">1,600 AED / day</span>
-                            <span class="price2">1,670 AED</span>
-                            <div class="clearfix"></div>
-                            <span class="rules">Monthly price by request</span>
-                            <div class="clearfix"></div>
-                            <%=image_tag "stars.png", class: "img-fluid", width: "150"%>
-                        </div>
-                    </div>
-                </div>
-            </a>
+        <div id= "cars">
+             <%= render partial: "car", locals: { cars: @cars } %>
         </div>
-
-        <div class="col-md-6 col-12">
-            <a href="#" class="cars">
-                <div class="row">
-                    <div class="col-md-4 col-12"><%=image_tag "car1.jpg", class: "img-fluid img-round"%></div>
-                    <div class="col-md-8 col-12">
-                        <div class="cars_details">
-                            <span class="badge bg-success">THIS CAR IS AVAILABLE</span>
-                            <span class="badge bg-secondary">5 PEOPLE ARE iNTERESTED</span>
-                            <div class="clearfix"></div>
-                            <h4>Black Cadillac Escalade, 2021</h4>
-                            <p>Refundable deposit 5,000 AED, Allowed mileage<br>
-                                250 km a day, Free delivery</p>
-                            <span class="price1">1,600 AED / day</span>
-                            <span class="price2">1,670 AED</span>
-                            <div class="clearfix"></div>
-                            <span class="rules">Monthly price by request</span>
-                            <div class="clearfix"></div>
-                            <%=image_tag "stars.png", class: "img-fluid", width: "150"%>
-                        </div>
-                    </div>
-                </div>
-            </a>
-        </div>
-
-        <div class="col-md-6 col-12">
-            <a href="#" class="cars">
-                <div class="row">
-                    <div class="col-md-4 col-12"><%=image_tag "car1.jpg", class: "img-fluid img-round"%></div>
-                    <div class="col-md-8 col-12">
-                        <div class="cars_details">
-                            <span class="badge bg-success">THIS CAR IS AVAILABLE</span>
-                            <span class="badge bg-secondary">5 PEOPLE ARE iNTERESTED</span>
-                            <div class="clearfix"></div>
-                            <h4>Black Cadillac Escalade, 2021</h4>
-                            <p>Refundable deposit 5,000 AED, Allowed mileage<br>
-                                250 km a day, Free delivery</p>
-                            <span class="price1">1,600 AED / day</span>
-                            <span class="price2">1,670 AED</span>
-                            <div class="clearfix"></div>
-                            <span class="rules">Monthly price by request</span>
-                            <div class="clearfix"></div>
-                            <%=image_tag "stars.png", class: "img-fluid", width: "150"%>
-                        </div>
-                    </div>
-                </div>
-            </a>
-        </div>
-
-        <div class="col-md-6 col-12">
-            <a href="#" class="cars">
-                <div class="row">
-                    <div class="col-md-4 col-12"><%=image_tag "car1.jpg", class: "img-fluid img-round"%></div>
-                    <div class="col-md-8 col-12">
-                        <div class="cars_details">
-                            <span class="badge bg-success">THIS CAR IS AVAILABLE</span>
-                            <span class="badge bg-secondary">5 PEOPLE ARE iNTERESTED</span>
-                            <div class="clearfix"></div>
-                            <h4>Black Cadillac Escalade, 2021</h4>
-                            <p>Refundable deposit 5,000 AED, Allowed mileage<br>
-                                250 km a day, Free delivery</p>
-                            <span class="price1">1,600 AED / day</span>
-                            <span class="price2">1,670 AED</span>
-                            <div class="clearfix"></div>
-                            <span class="rules">Monthly price by request</span>
-                            <div class="clearfix"></div>
-                            <%=image_tag "stars.png", class: "img-fluid", width: "150"%>
-                        </div>
-                    </div>
-                </div>
-            </a>
-        </div>
-
-        <div class="col-md-6 col-12">
-            <a href="#" class="cars">
-                <div class="row">
-                    <div class="col-md-4 col-12"><%=image_tag "car1.jpg", class: "img-fluid img-round"%></div>
-                    <div class="col-md-8 col-12">
-                        <div class="cars_details">
-                            <span class="badge bg-success">THIS CAR IS AVAILABLE</span>
-                            <span class="badge bg-secondary">5 PEOPLE ARE iNTERESTED</span>
-                            <div class="clearfix"></div>
-                            <h4>Black Cadillac Escalade, 2021</h4>
-                            <p>Refundable deposit 5,000 AED, Allowed mileage<br>
-                                250 km a day, Free delivery</p>
-                            <span class="price1">1,600 AED / day</span>
-                            <span class="price2">1,670 AED</span>
-                            <div class="clearfix"></div>
-                            <span class="rules">Monthly price by request</span>
-                            <div class="clearfix"></div>
-                            <%=image_tag "stars.png", class: "img-fluid", width: "150"%>
-                        </div>
-                    </div>
-                </div>
-            </a>
-        </div>
-
-        <div class="col-md-6 col-12">
-            <a href="#" class="cars">
-                <div class="row">
-                    <div class="col-md-4 col-12"><%=image_tag "car1.jpg", class: "img-fluid img-round"%></div>
-                    <div class="col-md-8 col-12">
-                        <div class="cars_details">
-                            <span class="badge bg-success">THIS CAR IS AVAILABLE</span>
-                            <span class="badge bg-secondary">5 PEOPLE ARE iNTERESTED</span>
-                            <div class="clearfix"></div>
-                            <h4>Black Cadillac Escalade, 2021</h4>
-                            <p>Refundable deposit 5,000 AED, Allowed mileage<br>
-                                250 km a day, Free delivery</p>
-                            <span class="price1">1,600 AED / day</span>
-                            <span class="price2">1,670 AED</span>
-                            <div class="clearfix"></div>
-                            <span class="rules">Monthly price by request</span>
-                            <div class="clearfix"></div>
-                            <%=image_tag "stars.png", class: "img-fluid", width: "150"%>
-                        </div>
-                    </div>
-                </div>
-            </a>
-        </div>
-
-        <div class="col-md-6 col-12">
-            <a href="#" class="cars">
-                <div class="row">
-                    <div class="col-md-4 col-12"><%=image_tag "car1.jpg", class: "img-fluid img-round"%></div>
-                    <div class="col-md-8 col-12">
-                        <div class="cars_details">
-                            <span class="badge bg-success">THIS CAR IS AVAILABLE</span>
-                            <span class="badge bg-secondary">5 PEOPLE ARE iNTERESTED</span>
-                            <div class="clearfix"></div>
-                            <h4>Black Cadillac Escalade, 2021</h4>
-                            <p>Refundable deposit 5,000 AED, Allowed mileage<br>
-                                250 km a day, Free delivery</p>
-                            <span class="price1">1,600 AED / day</span>
-                            <span class="price2">1,670 AED</span>
-                            <div class="clearfix"></div>
-                            <span class="rules">Monthly price by request</span>
-                            <div class="clearfix"></div>
-                            <%=image_tag "stars.png", class: "img-fluid", width: "150"%>
-                        </div>
-                    </div>
-                </div>
-            </a>
-        </div>
-
-        <div class="col-md-6 col-12">
-            <a href="#" class="cars">
-                <div class="row">
-                    <div class="col-md-4 col-12"><%=image_tag "car1.jpg", class: "img-fluid img-round"%></div>
-                    <div class="col-md-8 col-12">
-                        <div class="cars_details">
-                            <span class="badge bg-success">THIS CAR IS AVAILABLE</span>
-                            <span class="badge bg-secondary">5 PEOPLE ARE iNTERESTED</span>
-                            <div class="clearfix"></div>
-                            <h4>Black Cadillac Escalade, 2021</h4>
-                            <p>Refundable deposit 5,000 AED, Allowed mileage<br>
-                                250 km a day, Free delivery</p>
-                            <span class="price1">1,600 AED / day</span>
-                            <span class="price2">1,670 AED</span>
-                            <div class="clearfix"></div>
-                            <span class="rules">Monthly price by request</span>
-                            <div class="clearfix"></div>
-                            <%=image_tag "stars.png", class: "img-fluid", width: "150"%>
-                        </div>
-                    </div>
-                </div>
-            </a>
-        </div>
-
-        <div class="col-md-6 col-12">
-            <a href="#" class="cars">
-                <div class="row">
-                    <div class="col-md-4 col-12"><%=image_tag "car1.jpg", class: "img-fluid img-round"%></div>
-                    <div class="col-md-8 col-12">
-                        <div class="cars_details">
-                            <span class="badge bg-success">THIS CAR IS AVAILABLE</span>
-                            <span class="badge bg-secondary">5 PEOPLE ARE iNTERESTED</span>
-                            <div class="clearfix"></div>
-                            <h4>Black Cadillac Escalade, 2021</h4>
-                            <p>Refundable deposit 5,000 AED, Allowed mileage<br>
-                                250 km a day, Free delivery</p>
-                            <span class="price1">1,600 AED / day</span>
-                            <span class="price2">1,670 AED</span>
-                            <div class="clearfix"></div>
-                            <span class="rules">Monthly price by request</span>
-                            <div class="clearfix"></div>
-                            <%=image_tag "stars.png", class: "img-fluid", width: "150"%>
-                        </div>
-                    </div>
-                </div>
-            </a>
-        </div>
-        <div class="col-md-6 col-12">
-            <a href="#" class="cars">
-                <div class="row">
-                    <div class="col-md-4 col-12"><%=image_tag "car1.jpg", class: "img-fluid img-round"%></div>
-                    <div class="col-md-8 col-12">
-                        <div class="cars_details">
-                            <span class="badge bg-success">THIS CAR IS AVAILABLE</span>
-                            <span class="badge bg-secondary">5 PEOPLE ARE iNTERESTED</span>
-                            <div class="clearfix"></div>
-                            <h4>Black Cadillac Escalade, 2021</h4>
-                            <p>Refundable deposit 5,000 AED, Allowed mileage<br>
-                                250 km a day, Free delivery</p>
-                            <span class="price1">1,600 AED / day</span>
-                            <span class="price2">1,670 AED</span>
-                            <div class="clearfix"></div>
-                            <span class="rules">Monthly price by request</span>
-                            <div class="clearfix"></div>
-                            <%=image_tag "stars.png", class: "img-fluid", width: "150"%>
-                        </div>
-                    </div>
-                </div>
-            </a>
-        </div>
-
         <div class="theme_spacing">
             <div class="container">
                 <div class="carstext">
@@ -414,4 +165,29 @@ function collision($div1, $div2) {
     $('.ui-slider-handle:eq(0)').append('<span class="price-range-min value">AED' + $('#slider').slider('values', 0) + '</span>');
     
     $('.ui-slider-handle:eq(1)').append('<span class="price-range-max value">AED' + $('#slider').slider('values', 1) + '</span>');
+    function car_detail(){
+        var brand = $("#brand").val();
+        var model = $("#model").val();
+        var type = $("#type").val();
+    $.ajax({
+        headers: {
+          'X-CSRF-Token': '<%= form_authenticity_token.to_s %>'
+        },
+        url: '/car_detail',
+        type: 'get',
+        data: {
+          brand: brand,
+          model: model,
+          type: type
+        },
+        
+        success: function (result) {
+            // $("#cars").empty();
+            document.write(result)
+            // $("#cars").append(result);
+        },
+      });
+    }
+    
+      
 </script>
