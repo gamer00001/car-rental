@@ -1,29 +1,29 @@
-
-                <div class="container" id="cars">
-                    <div class="row">
-                     <%cars.each do |car| %>
-                        <div class="col-md-6 col-12">
-                            <a href="#" class="cars">
-                                <div class="row">
-                                    <div class="col-md-4 col-12"><%=image_tag "car1.jpg", class: "img-fluid img-round"%></div>
-                                    <div class="col-md-8 col-12">
-                                        <div class="cars_details">
-                                            <span class="badge bg-success">THIS CAR IS AVAILABLE</span>
-                                            <span class="badge bg-secondary">5 PEOPLE ARE iNTERESTED</span>
-                                            <div class="clearfix"></div>
-                                            <h4><%= car.name %></h4>
-                                            <p>Refundable deposit 5,000 AED, Allowed mileage<br>
-                                            250 km a day, Free delivery</p>
-                                            <span class="price1"><%= "#{car.price} / per day"%></span>
-                                            <span class="price2"><%= car.price %></span>
-                                            <div class="clearfix"></div>
-                                            <span class="rules">Monthly price by request</span>
-                                            <div class="clearfix"></div>
-                                            <%=image_tag "stars.png", class: "img-fluid", width: "150"%>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
+<div class="container" id="cars">
+    <div class="row">
+        <%cars.each do |car| %>
+        <div class="col-md-6 col-12">
+            <a href="#" class="cars">
+                <div class="row">
+                    <div class="col-md-4 col-12"><%=image_tag car.image.url, class: "img-fluid img-round"%></div>
+                    <div class="col-md-8 col-12">
+                        <div class="cars_details">
+                            <span class="badge bg-success">THIS CAR IS AVAILABLE</span>
+                            <span class="badge bg-secondary">5 PEOPLE ARE iNTERESTED</span>
+                            <div class="clearfix"></div>
+                            <h4><%= car.name %></h4>
+                            <p>Refundable deposit 5,000 AED, Allowed mileage<br>
+                                250 km a day, Free delivery</p>
+                            <span class="price1"><%= "#{car.price} / per day"%></span>
+                            <span class="price2"><%= car.price %></span>
+                            <div class="clearfix"></div>
+                            <span class="rules">Monthly price by request</span>
+                            <div class="clearfix"></div>
+                            <%=image_tag "stars.png", class: "img-fluid", width: "150"%>
+                        </div>
                     </div>
-                        <%end%>
                 </div>
+            </a>
+        </div>
+        <%end%>
+    </div>
+</div>
