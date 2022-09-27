@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2022_09_26_210143) do
+ActiveRecord::Schema.define(version: 2022_09_27_184030) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -46,6 +46,16 @@ ActiveRecord::Schema.define(version: 2022_09_26_210143) do
     t.index ["car_id"], name: "index_bookings_on_car_id"
   end
 
+  create_table "car_images", force: :cascade do |t|
+    t.string "image_file_name"
+    t.string "image_content_type"
+    t.string "image_file_size"
+    t.bigint "car_id"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.index ["car_id"], name: "index_car_images_on_car_id"
+  end
+
   create_table "cars", force: :cascade do |t|
     t.string "name"
     t.string "number"
@@ -69,4 +79,5 @@ ActiveRecord::Schema.define(version: 2022_09_26_210143) do
     t.datetime "updated_at", precision: 6, null: false
   end
 
+  add_foreign_key "car_images", "cars"
 end

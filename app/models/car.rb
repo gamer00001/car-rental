@@ -4,4 +4,5 @@ class Car < ApplicationRecord
 
     belongs_to :category
     has_many :bookings
+    has_many :car_images
 end
