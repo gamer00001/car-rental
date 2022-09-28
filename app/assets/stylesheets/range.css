@@ -57,6 +57,6 @@ span.ui-slider-handle.ui-corner-all.ui-state-default:focus {
 
 .ui-widget-content {
     border: 1px solid transparent!important;
-    background: #ffffff url(images/ui-bg_flat_75_ffffff_40x100.png) 50% 50% repeat-x!important;
+    background: #ffffff url("ui-bg_flat_75_ffffff_40x100.png") 50% 50% repeat-x!important;
     color: #222222!important;
 }

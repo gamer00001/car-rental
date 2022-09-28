@@ -1,33 +1,23 @@
+<%= content_for :nav_header_box do%>
+<%=render "pages/search_form_header"%>
+<%end%>
+
 <div class="container">
     <div class="filter_bg">
         <div class="row">
             <div class="col-md-2 col-12">
-                <select class="form-select mb-2" aria-label="Default select example" style="background-color: white" id="brand">
+                <select class="form-select mb-2" aria-label="Default select example" style="background-color: white"
+                    id="brand">
                     <option selected value="0">Choose A Brand</option>
-                    <option value="Audi">Audi</option>
-                    <option value="Abarth">Abarth</option>
-                    <option value="BMW">BMW</option>
-                    <option value="Chevrolet">Chevrolet</option>
-                    <option value="Dodge">Dodge</option>
-                    <option value="Ford">Ford</option>
-                    <option value="Honda">Honda</option>
-                    <option value="Hongqi">Hongqi</option>
-                    <option value="Nissan">Nissan</option>
-                    <option value="Lexus">Lexus</option>
-                    <option value="Renault">Renault</option>
-                    <option value="Hyundai">Hyundai</option>
-                    <option value="Toyota">Toyota</option>
-                    <option value="GAC">GAC</option>
-                    <option value="Suzuki">Suzuki</option>
-                    <option value="Mitsubishi">Mitsubishi</option>
-                    <option value="Lamborghini">Lamborghini</option>
-                    <option value="Ferrari">Ferrari</option>
-                    <option value="McLaren">McLaren</option>
-                    <option value="Tesla">Tesla</option>
+                    <option value="Prestige & Business Cars">Prestige & Business Cars</option>
+                    <option value="SUV Cars">SUV Cars</option>
+                    <option value="BMW">Sports Cars</option>
+                    <option value="Sports Cars">Chevrolet</option>
                 </select>
             </div>
             <div class="col-md-3 col-12">
-                <select class="form-select mb-2" aria-label="Default select example" style="background-color: white" id="model">
+                <select class="form-select mb-2" aria-label="Default select example" style="background-color: white"
+                    id="model">
                     <option selected value="0">Choose A Model</option>
                     <option value="2015">2015</option>
                     <option value="2016">2016</option>
@@ -40,7 +30,8 @@
                 </select>
             </div>
             <div class="col-md-3 col-12">
-                <select class="form-select mb-2" aria-label="Default select example" style="background-color: white" id="type">
+                <select class="form-select mb-2" aria-label="Default select example" style="background-color: white"
+                    id="type">
                     <option selected value="0">Body Type</option>
                     <option value="Sedan">Sedan</option>
                     <option value="Hatchback">Hatchback</option>
@@ -55,64 +46,65 @@
             <div class="col-md-3 col-12 mb-4">
                 <div id="slider"></div>
             </div>
-            <div class="col-md-1 col-12 mb-2"><button type="button" class="btn btn-danger" onclick="car_detail()">Apply</button></div>
+            <div class="col-md-1 col-12 mb-2"><button type="button" class="btn btn-danger"
+                    onclick="car_detail()">Apply</button></div>
         </div>
     </div>
 </div>
 
 
-        <div id= "cars">
-             <%= render partial: "car", locals: { cars: @cars } %>
+<div id="cars">
+    <%= render partial: "car", locals: { cars: @cars } %>
+</div>
+<div class="theme_spacing">
+    <div class="container">
+        <div class="carstext">
+            <p>
+                <strong>One of the best Business vehicles for rental in Dubai is a BMW 7 Series!</strong><br>
+                BMW 7-Series is made in the best traditions of the German concern. This legendary sedan has
+                excellent dynamics and handling, but at the same time maintains a high level of riding comfort,
+                which is especially valued in the limousine segment for VIPs. The body is made of super-proof
+                steel. <br><br>
+
+                <strong>Characteristics:</strong><br>
+                * Three-liter turbodiel motor 3.0 liters;<br>
+                * Power 265 hp;<br>
+                * Eight-stage automatic transmission;<br>
+                * Full drive system. <br><br>
+
+                The car easily accelerates to 100 km/h in just 5.9 seconds. At a speed of 60 km/h, BMW 7
+                accelerates so smooth and silently as if it stands still. <br><br>
+
+                The navigation system is sensory with detailed graphics. A stroke reserve, fuel residue, and
+                temperature-controlling are translated on the screen. There is a function of visual control of
+                the machine from the outside with the help of cameras. Multimedia iDrive is controlled by
+                gestures. It has additional features such as Internet access and car settings. <br><br>
+
+                Our Car Rental Market offers to rent a BMW 7 Series in Dubai as well as other BMW cars in
+                favorable conditions from several hours to 30 days or more. We care about your safety, so all
+                BMW are supplied to tenants in perfect technical condition. Just enjoy driving a car. A flexible
+                rental rate of BMW 7 in Dubai will allow you to choose a favorable option. <br><br>
+
+                With our service, you will be always and everywhere on time. Rent a BMW 7 in Dubai and make sure
+                of the comfort and safety of this legendary sedan. After the reconciliation of the rental
+                conditions, we will deliver the BMW 7 at a convenient place for you.
+            </p>
         </div>
-        <div class="theme_spacing">
-            <div class="container">
-                <div class="carstext">
-                    <p>
-                        <strong>One of the best Business vehicles for rental in Dubai is a BMW 7 Series!</strong><br>
-                        BMW 7-Series is made in the best traditions of the German concern. This legendary sedan has
-                        excellent dynamics and handling, but at the same time maintains a high level of riding comfort,
-                        which is especially valued in the limousine segment for VIPs. The body is made of super-proof
-                        steel. <br><br>
-
-                        <strong>Characteristics:</strong><br>
-                        * Three-liter turbodiel motor 3.0 liters;<br>
-                        * Power 265 hp;<br>
-                        * Eight-stage automatic transmission;<br>
-                        * Full drive system. <br><br>
-
-                        The car easily accelerates to 100 km/h in just 5.9 seconds. At a speed of 60 km/h, BMW 7
-                        accelerates so smooth and silently as if it stands still. <br><br>
-
-                        The navigation system is sensory with detailed graphics. A stroke reserve, fuel residue, and
-                        temperature-controlling are translated on the screen. There is a function of visual control of
-                        the machine from the outside with the help of cameras. Multimedia iDrive is controlled by
-                        gestures. It has additional features such as Internet access and car settings. <br><br>
-
-                        Our Car Rental Market offers to rent a BMW 7 Series in Dubai as well as other BMW cars in
-                        favorable conditions from several hours to 30 days or more. We care about your safety, so all
-                        BMW are supplied to tenants in perfect technical condition. Just enjoy driving a car. A flexible
-                        rental rate of BMW 7 in Dubai will allow you to choose a favorable option. <br><br>
-
-                        With our service, you will be always and everywhere on time. Rent a BMW 7 in Dubai and make sure
-                        of the comfort and safety of this legendary sedan. After the reconciliation of the rental
-                        conditions, we will deliver the BMW 7 at a convenient place for you.
-                    </p>
-                </div>
-            </div>
-        </div>
-
     </div>
+</div>
+
+</div>
 </div>
 
 <script>
-function collision($div1, $div2) {
+    function collision($div1, $div2) {
         var x1 = $div1.offset().left;
         var w1 = 40;
         var r1 = x1 + w1;
         var x2 = $div2.offset().left;
         var w2 = 40;
         var r2 = x2 + w2;
-    
+
         if (r1 < x2 || x1 > r2)
             return false;
         return true;
@@ -131,24 +123,26 @@ function collision($div1, $div2) {
         min: 1000,
         max: 10000,
         step: 1,
-        values: [getQueryString('minval') ? getQueryString('minval') : 3000, getQueryString('maxval') ? getQueryString('maxval') : 6000],
-    
+        values: [getQueryString('minval') ? getQueryString('minval') : 3000, getQueryString('maxval') ?
+            getQueryString('maxval') : 6000
+        ],
+
         slide: function (event, ui) {
-    
-            $('.ui-slider-handle:eq(0) .price-range-min').html('AED' + ui.values[ 0 ]);
-            $('.ui-slider-handle:eq(1) .price-range-max').html('AED' + ui.values[ 1 ]);
-            $('.price-range-both').html('<i>AED' + ui.values[ 0 ] + ' - </i>AED' + ui.values[ 1 ]);
-    
+
+            $('.ui-slider-handle:eq(0) .price-range-min').html('AED' + ui.values[0]);
+            $('.ui-slider-handle:eq(1) .price-range-max').html('AED' + ui.values[1]);
+            $('.price-range-both').html('<i>AED' + ui.values[0] + ' - </i>AED' + ui.values[1]);
+
             // get values of min and max
             $("#minval").val(ui.values[0]);
             $("#maxval").val(ui.values[1]);
-            
+
             if (ui.values[0] == ui.values[1]) {
                 $('.price-range-both i').css('display', 'none');
             } else {
                 $('.price-range-both i').css('display', 'inline');
             }
-    
+
             if (collision($('.price-range-min'), $('.price-range-max')) == true) {
                 $('.price-range-min, .price-range-max').css('opacity', '0');
                 $('.price-range-both').css('display', 'block');
@@ -156,36 +150,40 @@ function collision($div1, $div2) {
                 $('.price-range-min, .price-range-max').css('opacity', '1');
                 $('.price-range-both').css('display', 'none');
             }
-    
+
         }
     });
-    
-    $('.ui-slider-range').append('<span class="price-range-both value"><i>AED' + $('#slider').slider('values', 0) + ' - </i>' + $('#slider').slider('values', 1) + '</span>');
-    
-    $('.ui-slider-handle:eq(0)').append('<span class="price-range-min value">AED' + $('#slider').slider('values', 0) + '</span>');
-    
-    $('.ui-slider-handle:eq(1)').append('<span class="price-range-max value">AED' + $('#slider').slider('values', 1) + '</span>');
-    function car_detail(){
+
+    $('.ui-slider-range').append('<span class="price-range-both value"><i>AED' + $('#slider').slider('values', 0) +
+        ' - </i>' + $('#slider').slider('values', 1) + '</span>');
+
+    $('.ui-slider-handle:eq(0)').append('<span class="price-range-min value">AED' + $('#slider').slider('values', 0) +
+        '</span>');
+
+    $('.ui-slider-handle:eq(1)').append('<span class="price-range-max value">AED' + $('#slider').slider('values', 1) +
+        '</span>');
+
+    function car_detail() {
         var brand = $("#brand").val();
         var model = $("#model").val();
         var type = $("#type").val();
-    $.ajax({
-        headers: {
-          'X-CSRF-Token': '<%= form_authenticity_token.to_s %>'
-        },
-        url: '/car_detail',
-        type: 'get',
-        data: {
-          brand: brand,
-          model: model,
-          type: type
-        },
-        
-        success: function (result) {
-            // $("#cars").empty();
-            document.write(result)
-            // $("#cars").append(result);
-        },
-      });
+        $.ajax({
+            headers: {
+                'X-CSRF-Token': '<%= form_authenticity_token.to_s %>'
+            },
+            url: '/car_detail',
+            type: 'get',
+            data: {
+                brand: brand,
+                model: model,
+                type: type
+            },
+
+            success: function (result) {
+                // $("#cars").empty();
+                document.write(result)
+                // $("#cars").append(result);
+            },
+        });
     }
 </script>
