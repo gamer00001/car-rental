@@ -63,11 +63,11 @@ ActiveRecord::Schema.define(version: 2022_09_27_184030) do
     t.integer "price"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.bigint "category_id"
     t.string "image_file_name"
     t.string "image_content_type"
     t.bigint "image_file_size"
     t.datetime "image_updated_at"
-    t.bigint "category_id"
     t.string "brand"
     t.string "body_type"
     t.index ["category_id"], name: "index_cars_on_category_id"
@@ -75,6 +75,11 @@ ActiveRecord::Schema.define(version: 2022_09_27_184030) do
 
   create_table "categories", force: :cascade do |t|
     t.string "name"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
+
+  create_table "photos", force: :cascade do |t|
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end

@@ -1,227 +1,240 @@
 <% if action_name == "index"%>
 <div class="hero_section">
-     <div class="hero_slider">
-       <div class="parallax-hero full-screen bg-slideshow-wrapper">
-         <div class="bg-slideshow bg-slide-1"></div>
-         <div class="bg-slideshow bg-slide-2"></div>
-         <div class="bg-slideshow bg-slide-3"></div>
-         <div class="bg-slideshow bg-slide-4"></div>
-       </div>
+  <div class="hero_slider">
+    <div class="parallax-hero full-screen bg-slideshow-wrapper">
+      <div class="bg-slideshow bg-slide-1"></div>
+      <div class="bg-slideshow bg-slide-2"></div>
+      <div class="bg-slideshow bg-slide-3"></div>
+      <div class="bg-slideshow bg-slide-4"></div>
+    </div>
 
-     </div>
-     <div class="menu_sec">
-       <div class="container">
-         <div class="menu">
-           <div class="row mt-2 mb-2">
-             <div class="col-md-10 col-10">
-               <p class="wa_text">
-                 To get the prices call us directly at <strong>+971 55 454 2677</strong> or <strong>Whatapp +971 58 521
-                   0662</strong>
-               </p>
-             </div>
-             <div class="col-md-2 col-2">
-               <div class="dropdown">
-                 <button class="btn btn-link dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                   AED
-                 </button>
-                 <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                   <li><a class="dropdown-item" href="#">AED</a></li>
-                   <li><a class="dropdown-item" href="#">Dollar</a></li>
-                 </ul>
-               </div>
-             </div>
-           </div>
-           <div class="clearfix"></div>
+  </div>
+  <div class="menu_sec">
+    <div class="container">
+      <div class="menu">
+        <div class="row mt-2 mb-2">
+          <div class="col-md-10 col-10">
+            <p class="wa_text">
+              To get the prices call us directly at <strong>+971 55 454 2677</strong> or <strong>Whatapp +971 58 521
+                0662</strong>
+            </p>
+          </div>
+          <div class="col-md-2 col-2">
+            <div class="dropdown">
+              <button class="btn btn-link dropdown-toggle" type="button" id="dropdownMenuButton1"
+                data-bs-toggle="dropdown" aria-expanded="false">
+                AED
+              </button>
+              <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                <li><a class="dropdown-item" href="#">AED</a></li>
+                <li><a class="dropdown-item" href="#">Dollar</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="clearfix"></div>
 
-         </div>
+      </div>
 
-       </div>
-       <div class="nav_menu">
-         <div class="container">
-           <nav class="navbar navbar-expand-lg navbar-dark">
-             <div class="container-fluid">
-               <a class="navbar-brand" href="#"><%=image_tag "logo.png", class: "img-fluid", width:"150" %></a>
-               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                 <span class="navbar-toggler-icon"></span>6,200 AED
+    </div>
+    <div class="nav_menu">
+      <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-dark">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#"><%=image_tag "logo.png", class: "img-fluid", width:"150" %></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+              aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>6,200 AED
 
-               </button>
-               <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                 <ul class="navbar-nav ms-auto">
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+              <ul class="navbar-nav ms-auto">
 
-                   <li class="nav-item dropdown">
-                     <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                       Rent a car
-                     </a>
-                     <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                       <li><a class="dropdown-item" href="#">Action</a></li>
-                       <li><a class="dropdown-item" href="#">Another action</a></li>
-                       <li><a class="dropdown-item" href="#">Something else here</a></li>
-                     </ul>
-                   </li>
+                <li class="nav-item dropdown">
+                <!-- <a class="nav-link dropdown-toggle active" href="/" id="navbarDropdownMenuLink" role="button"
+                    data-bs-toggle="dropdown" aria-expanded="false">
+                    Home
+                  </a> -->
+                  <a class="nav-link" href="/">Home</a>
+                  <!-- <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                            <li><a class="dropdown-item" href="#">Action</a></li>
+                                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                        </ul> -->
+                </li>
 
-                   <li class="nav-item dropdown">
-                     <a class="nav-link dropdown-toggle " href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                       Car brands
-                     </a>
-                     <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                       <li><a class="dropdown-item" href="#">Action</a></li>
-                       <li><a class="dropdown-item" href="#">Another action</a></li>
-                       <li><a class="dropdown-item" href="#">Something else here</a></li>
-                     </ul>
-                   </li>
+                <li class="nav-item dropdown">
+                <!--  <a class="nav-link dropdown-toggle " href="/about" id="navbarDropdownMenuLink" role="button"
+                    data-bs-toggle="dropdown" aria-expanded="false">
+                    About Us
+                  </a> -->
+                  <a class="nav-link" href="/about">About Us</a>
+                  <!-- <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                            <li><a class="dropdown-item" href="#">Action</a></li>
+                                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                        </ul> -->
+                </li>
 
-                   <li class="nav-item dropdown">
-                     <a class="nav-link dropdown-toggle " href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                       Dubai locations
-                     </a>
-                     <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                       <li><a class="dropdown-item" href="#">Action</a></li>
-                       <li><a class="dropdown-item" href="#">Another action</a></li>
-                       <li><a class="dropdown-item" href="#">Something else here</a></li>
-                     </ul>
-                   </li>
+                <li class="nav-item dropdown">
+                 <!-- <a class="nav-link dropdown-toggle " href="/car_detail" id="navbarDropdownMenuLink" role="button"
+                    data-bs-toggle="dropdown" aria-expanded="false">
+                    Cars
+                  </a>-->
+                  <a class="nav-link" href="/car_detail">Cars</a>
+                  <!--  <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                            <li><a class="dropdown-item" href="#">Action</a></li>
+                                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                        </ul> -->
+                </li>
 
-                   <li class="nav-item dropdown">
-                     <a class="nav-link dropdown-toggle " href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                       Classic cars
-                     </a>
-                     <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                       <li><a class="dropdown-item" href="#">Action</a></li>
-                       <li><a class="dropdown-item" href="#">Another action</a></li>
-                       <li><a class="dropdown-item" href="#">Something else here</a></li>
-                     </ul>
-                   </li>
+                <li class="nav-item dropdown">
+                  <!-- <a class="nav-link dropdown-toggle " href="/contact" id="navbarDropdownMenuLink" role="button"
+                    data-bs-toggle="dropdown" aria-expanded="false">
+                    Contact Us
+                  </a> -->
+                  <a class="nav-link" href="/contact">Contact Us</a>
+                  <!--    <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                            <li><a class="dropdown-item" href="#">Action</a></li>
+                                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                        </ul> -->
+                </li>
 
-                 </ul>
-               </div>
-             </div>
-           </nav>
-         </div>
-       </div>
-       
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </div>
 
-       <div class="container">
-         <div class="d-flex justify-content-center">
-         
-           <div class="slogan col-md-6 col-12">
 
-              <%=yield :nav_header_box%>
+    <div class="container">
+      <div class="d-flex justify-content-center">
 
-           </div>
-         </div>
-       </div>
-     </div>
-   </div>
+        <div class="slogan col-md-6 col-12">
+
+          <%=yield :nav_header_box%>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 <%else%>
 <div class="">
-    <div class="nextpagebg">
+  <div class="nextpagebg">
 
-        <div class="">
-            <div class="container">
-                <div class="menu">
-                    <div class="row mt-2 mb-2">
-                        <div class="col-md-10 col-10">
-                            <p class="wa_text">
-                                To get the prices call us directly at <strong>+971 55 454 2677</strong> or
-                                <strong>Whatapp +971 58 521 0662</strong>
-                            </p>
-                        </div>
-                        <div class="col-md-2 col-2">
-                            <div class="dropdown">
-                                <button class="btn btn-link dropdown-toggle" type="button" id="dropdownMenuButton1"
-                                    data-bs-toggle="dropdown" aria-expanded="false">
-                                    AED
-                                </button>
-                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                                    <li><a class="dropdown-item" href="#">AED</a></li>
-                                    <li><a class="dropdown-item" href="#">Dollar</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="clearfix"></div>
-
-                </div>
-
+    <div class="">
+      <div class="container">
+        <div class="menu">
+          <div class="row mt-2 mb-2">
+            <div class="col-md-10 col-10">
+              <p class="wa_text">
+                To get the prices call us directly at <strong>+971 55 454 2677</strong> or
+                <strong>Whatapp +971 58 521 0662</strong>
+              </p>
             </div>
-            <div class="nav_menu">
-                <div class="container">
-                    <nav class="navbar navbar-expand-lg navbar-dark">
-                        <div class="container-fluid">
-                            <a class="navbar-brand" href="#"><%=image_tag "logo.png", class: "img-fluid", width:"150" %></a>
-                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown"
-                                aria-expanded="false" aria-label="Toggle navigation">
-                                <span class="navbar-toggler-icon"></span>
-                            </button>
-                            <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                                <ul class="navbar-nav ms-auto">
-
-                                    <li class="nav-item dropdown">
-                                        <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdownMenuLink"
-                                            role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                            Rent a car
-                                        </a>
-                                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                                            <li><a class="dropdown-item" href="#">Action</a></li>
-                                            <li><a class="dropdown-item" href="#">Another action</a></li>
-                                            <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                        </ul>
-                                    </li>
-
-                                    <li class="nav-item dropdown">
-                                        <a class="nav-link dropdown-toggle " href="#" id="navbarDropdownMenuLink"
-                                            role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                            Car brands
-                                        </a>
-                                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                                            <li><a class="dropdown-item" href="#">Action</a></li>
-                                            <li><a class="dropdown-item" href="#">Another action</a></li>
-                                            <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                        </ul>
-                                    </li>
-
-                                    <li class="nav-item dropdown">
-                                        <a class="nav-link dropdown-toggle " href="#" id="navbarDropdownMenuLink"
-                                            role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                            Dubai locations
-                                        </a>
-                                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                                            <li><a class="dropdown-item" href="#">Action</a></li>
-                                            <li><a class="dropdown-item" href="#">Another action</a></li>
-                                            <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                        </ul>
-                                    </li>
-
-                                    <li class="nav-item dropdown">
-                                        <a class="nav-link dropdown-toggle " href="#" id="navbarDropdownMenuLink"
-                                            role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                            Classic cars
-                                        </a>
-                                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                                            <li><a class="dropdown-item" href="#">Action</a></li>
-                                            <li><a class="dropdown-item" href="#">Another action</a></li>
-                                            <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                        </ul>
-                                    </li>
-
-                                </ul>
-                            </div>
-                        </div>
-                    </nav>
-                </div>
+            <div class="col-md-2 col-2">
+              <div class="dropdown">
+                <button class="btn btn-link dropdown-toggle" type="button" id="dropdownMenuButton1"
+                  data-bs-toggle="dropdown" aria-expanded="false">
+                  AED
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                  <li><a class="dropdown-item" href="#">AED</a></li>
+                  <li><a class="dropdown-item" href="#">Dollar</a></li>
+                </ul>
+              </div>
             </div>
+          </div>
+          <div class="clearfix"></div>
 
-            <div class="container">
-                <div class="d-flex justify-content-center">
-                    <div class="slogan0 col-md-6 col-12">
-                        <%=yield :nav_header_box%>
-
-                    </div>
-                </div>
-            </div>
         </div>
+
+      </div>
+      <div class="nav_menu">
+        <div class="container">
+          <nav class="navbar navbar-expand-lg navbar-dark">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#"><%=image_tag "logo.png", class: "img-fluid", width:"150" %></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNavDropdown">
+              <ul class="navbar-nav ms-auto">
+
+              <li class="nav-item dropdown">
+              <!-- <a class="nav-link dropdown-toggle active" href="/" id="navbarDropdownMenuLink" role="button"
+                  data-bs-toggle="dropdown" aria-expanded="false">
+                  Home
+                </a> -->
+                <a class="nav-link" href="/">Home</a>
+                <!-- <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                          <li><a class="dropdown-item" href="#">Action</a></li>
+                                          <li><a class="dropdown-item" href="#">Another action</a></li>
+                                          <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                      </ul> -->
+              </li>
+
+              <li class="nav-item dropdown">
+              <!--  <a class="nav-link dropdown-toggle " href="/about" id="navbarDropdownMenuLink" role="button"
+                  data-bs-toggle="dropdown" aria-expanded="false">
+                  About Us
+                </a> -->
+                <a class="nav-link" href="/about">About Us</a>
+                <!-- <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                          <li><a class="dropdown-item" href="#">Action</a></li>
+                                          <li><a class="dropdown-item" href="#">Another action</a></li>
+                                          <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                      </ul> -->
+              </li>
+
+              <li class="nav-item dropdown">
+               <!-- <a class="nav-link dropdown-toggle " href="/car_detail" id="navbarDropdownMenuLink" role="button"
+                  data-bs-toggle="dropdown" aria-expanded="false">
+                  Cars
+                </a>-->
+                <a class="nav-link" href="/car_detail">Cars</a>
+                <!--  <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                          <li><a class="dropdown-item" href="#">Action</a></li>
+                                          <li><a class="dropdown-item" href="#">Another action</a></li>
+                                          <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                      </ul> -->
+              </li>
+
+              <li class="nav-item dropdown">
+                <!-- <a class="nav-link dropdown-toggle " href="/contact" id="navbarDropdownMenuLink" role="button"
+                  data-bs-toggle="dropdown" aria-expanded="false">
+                  Contact Us
+                </a> -->
+                <a class="nav-link" href="/contact">Contact Us</a>
+                <!--    <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                          <li><a class="dropdown-item" href="#">Action</a></li>
+                                          <li><a class="dropdown-item" href="#">Another action</a></li>
+                                          <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                      </ul> -->
+              </li>
+
+            </ul>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="d-flex justify-content-center">
+          <div class="slogan0 col-md-6 col-12">
+            <%=yield :nav_header_box%>
+
+          </div>
+        </div>
+      </div>
     </div>
+  </div>
 </div>
 
 <%end%>
