@@ -5,6 +5,9 @@ Rails.application.routes.draw do
   root "pages#index"
   get "car_detail", to: "pages#car_detail"
   get "car_show_detail/:id", to: "pages#car_show_detail"
+  get "about", to: "pages#about" 
+  get "contact", to: "pages#contact" 
+  
   resources :cars
   resources :categorys
   resources :bookings
