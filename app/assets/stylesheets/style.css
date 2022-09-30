@@ -594,7 +594,7 @@ body {
 .accordion-button:not(.collapsed) {
     color: #fff;
     background-color: #d93030;
-    box-shadow: inset 0 -1px 0 rgb(0 0 0 / 13%);
+    box-shadow: inset 0 -1px 0 rgb(0, 0, 0 / 13%);
 }
 
 .accordion-button {
