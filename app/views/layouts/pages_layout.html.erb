@@ -38,7 +38,9 @@
     <%=render "layouts/nav_header"%>
     <%= yield %>
 
-    <%=render "layouts/about"%>
+    <%if !["terms", "privacy", "cookie_policy"].include?(action_name)%>
+        <%=render "layouts/about"%>
+    <%end%>
     <%=render "layouts/footer"%>
 
 
@@ -53,6 +55,18 @@
     <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/2.2.2/isotope.pkgd.min.js'></script>
     <%= javascript_pack_tag "hover.js" %>
     <%= javascript_pack_tag "gallery.js" %>
+
+
+  <script>
+    $(document).ready(function () {
+      $(".dropdown").hover(function () {
+        var dropdownMenu = $(this).children(".dropdown-menu");
+        if (dropdownMenu.is(":visible")) {
+          dropdownMenu.parent().toggleClass("open");
+        }
+      });
+    });
+  </script>
 
 </body>
 
