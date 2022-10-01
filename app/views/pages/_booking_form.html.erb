@@ -1,0 +1,55 @@
+<form action="<%= bookings_path%>" enctype="multipart/form-data" method="POST">
+    <div class="dtl_form">
+        <div class="mb-3">
+            <span class="price002">1,000 AED</span>
+            <div class="clearfix"></div>
+            <span class="price001">800 AED / DAY</span>
+        </div>
+        <input type="hidden" name="price" value="800">
+        <div class="mb-3">
+            <label class="title">Set a pick-up date</label>
+            <input name="start_date" type="date" class="form-control01">
+        </div>
+        <div class="mb-3">
+            <label class="title">Set a drop-off date</label>
+            <input type="date" class="form-control01">
+        </div>
+
+        <div class="mb-3">
+            <label class="title">First Name</label>
+            <input type="type" class="form-control01" placeholder="First Name">
+        </div>
+
+        <div class="mb-3">
+            <label class="title">Last Name</label>
+            <input type="type" class="form-control01" placeholder="Last Name">
+        </div>
+
+        <div class="mb-3">
+            <label class="title">Mobile No</label>
+            <input type="type" class="form-control01" placeholder="Mobile">
+        </div>
+        <div class="mb-3">
+            <label class="title">Email</label>
+            <input type="type" class="form-control01" placeholder="Email">
+        </div>
+
+        <div class="mb-3">
+            <label class="title">Driving License Upload</label>
+            <input class="form-control form-control01" type="file" id="formFile" placeholder="Driving License Upload">
+        </div>
+
+        <div class="mb-3">
+            <div class="d-grid gap-2 mt-3">
+                <button type="button" class="btn btn-danger">CHECK Availability</button>
+            </div>
+        </div>
+
+        <ul>
+            <li><a href="#"><%=image_tag "sc1.png" , class: "img-fluid", width:"30", alt:"" %></a></li>
+            <li><a href="#"><%=image_tag "sc2.png" , class: "img-fluid",  width:"30", alt:"" %></a></li>
+            <li><a href="#"><%=image_tag "sc3.png" , class: "img-fluid", width:"30", alt:"" %></a></li>
+        </ul>
+        <div class="clearfix"></div>
+    </div>
+</form>

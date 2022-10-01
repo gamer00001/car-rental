@@ -11,6 +11,17 @@ Rails.application.routes.draw do
   get "terms", to: "pages#terms"
   get "cookie_policy", to: "pages#cookie_policy"
 
+  get "payment", to: "pages#payment"
+
+  get "mercedes_benz_c_class", to: "pages#mercedes_benz_c_class"
+  get "mercedes_benz_e_class", to: "pages#mercedes_benz_e_class"
+  get "mercedes_benz_s_class", to: "pages#mercedes_benz_s_class"
+  get "bmw_7_series", to: "pages#bmw_7_series"
+  get "rolls_royce_wraith", to: "pages#rolls_royce_wraith"
+  get "rolls_royce_ghost", to: "pages#rolls_royce_ghost"
+  get "rolls_royce_dawn", to: "pages#rolls_royce_dawn"
+
+
   
   resources :cars
   resources :categorys

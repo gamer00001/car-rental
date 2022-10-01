@@ -38,9 +38,7 @@
     <%=render "layouts/nav_header"%>
     <%= yield %>
 
-    <%if !["terms", "privacy", "cookie_policy"].include?(action_name)%>
-        <%=render "layouts/about"%>
-    <%end%>
+    
     <%=render "layouts/footer"%>
 
 
