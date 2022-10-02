@@ -86,4 +86,42 @@ class PagesController < ApplicationController
     def rolls_royce_dawn
     end
 
+
+    # SUV Cars
+    def chevrolet_tahoe
+    end
+
+    def gmc_yukon_denali
+    end
+
+    def cadillac_escalade
+    end
+
+    def mercedes_benz_g63
+    end
+
+    def range_rover_sport
+    end
+
+    def range_rover_velar
+    end
+
+    def range_rover_svr
+    end
+
+    def audi_q8
+    end
+
+    def audi_rsq8
+    end
+
+    def lamborghini_urus 
+    end
+
+    def bentley_bentayga
+    end
+
+    def rolls_royce_cullinan
+    end
+
 end
