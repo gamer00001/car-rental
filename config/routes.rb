@@ -37,6 +37,25 @@ Rails.application.routes.draw do
   get "bentley_bentayga", to: "pages#bentley_bentayga"
   get "rolls_royce_cullinan", to: "pages#rolls_royce_cullinan"
 
+  # sport cars
+
+  get "ford_mustang_cabrio", to: "pages#ford_mustang_cabrio"
+  get "chevrolet_camaro_cabrio", to: "pages#chevrolet_camaro_cabrio"
+  get "chevrolet_corvette_stingray", to: "pages#chevrolet_corvette_stingray"
+  get "audi_r8", to: "pages#audi_r8"
+  get "audi_r8_cabrio", to: "pages#audi_r8_cabrio"
+  get "porsche_cayman", to: "pages#porsche_cayman"
+  get "porsche_boxter", to: "pages#porsche_boxter"
+  get "porsche_911", to: "pages#porsche_911"
+  get "orsche", to: "pages#orsche"
+  get "ferrari_488_gtb", to: "pages#ferrari_488_gtb"
+  get "ferrari_488_spyder", to: "pages#ferrari_488_spyder"
+  get "ferrari_roma", to: "pages#ferrari_roma"
+  get "ferrari_portofino", to: "pages#ferrari_portofino"
+  get "ferrari_f8_spyder", to: "pages#ferrari_f8_spyder"
+  get "ferrari_f8", to: "pages#ferrari_f8"
+  get "lamborghini_huracan_evo", to: "pages#lamborghini_huracan_evo"
+  get "lamborghini_huracan_evo_spyder", to: "pages#lamborghini_huracan_evo_spyder"
 
 
 

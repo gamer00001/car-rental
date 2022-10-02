@@ -124,4 +124,57 @@ class PagesController < ApplicationController
     def rolls_royce_cullinan
     end
 
+
+    # sports car
+    def ford_mustang_cabrio
+    end
+
+    def chevrolet_camaro_cabrio
+    end
+
+    def chevrolet_corvette_stingray
+    end
+
+    def audi_r8
+    end
+
+    def audi_r8_cabrio
+    end
+
+    def porsche_cayman
+    end
+
+    def porsche_boxter
+    end
+
+    def porsche_911
+    end
+
+    def orsche
+    end
+
+    def ferrari_488_gtb
+    end
+
+    def ferrari_488_spyder
+    end
+
+    def ferrari_roma
+    end
+
+    def ferrari_portofino
+    end
+
+    def ferrari_f8_spyder
+    end
+
+    def ferrari_f8
+    end
+
+    def lamborghini_huracan_evo
+    end
+
+    def lamborghini_huracan_evo_spyder
+    end
+
 end
