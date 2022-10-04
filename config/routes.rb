@@ -20,7 +20,6 @@ Rails.application.routes.draw do
   get "rolls_royce_wraith", to: "pages#rolls_royce_wraith"
   get "rolls_royce_ghost", to: "pages#rolls_royce_ghost"
   get "rolls_royce_dawn", to: "pages#rolls_royce_dawn"
-  get "rolls_royce_dawn", to: "pages#rolls_royce_dawn"
 
   # SUV cars
 
