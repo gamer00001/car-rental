@@ -67,6 +67,23 @@
                                 </div>
                             </div>
                             <!--end col-->
+
+                            <div class="col-md-6">
+                                <div class="mb-3">
+                                    <label for="description" class="form-label">Description</label>
+                                    <textarea class="form-control" id="description"  value="<%=@car.description%>"  name="car[description]" rows="3" style="width: -webkit-fill-available"><%=@car.description%></textarea>
+                                </div>
+                            </div>
+                            <%byebug%>
+
+                            <div class="col-md-6">
+                                <div class="mb-3">
+                                    <label for="feature" class="form-label">Features</label>
+                                    <textarea class="form-control" id="feature"  value="<%=@car.feature%>"  name="car[feature]" rows="3" style="width: -webkit-fill-available"><%=@car.feature%></textarea>
+                                </div>
+                            </div>
+
+                            
                             <div class="col-md-6">
                                 <div class="mb-3">
                                     <label for="category" class="form-label">Choose Category</label>

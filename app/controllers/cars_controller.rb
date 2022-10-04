@@ -23,6 +23,7 @@ class CarsController < ApplicationController
     end
 
     def update
+        byebug
         @car.update(car_params)
         redirect_to car_path(@car)
     end
@@ -41,6 +42,6 @@ class CarsController < ApplicationController
             @car = params[:id].present? ? Car.find(params[:id]) :  Car.new  
         end
         def car_params
-            params.require(:car).permit(:name, :model, :number, :price, :image, :category_id)
+            params.require(:car).permit(:name, :model, :number, :price, :image, :category_id, :feature, :description)
         end
 end

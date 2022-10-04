@@ -1,8 +1,8 @@
 <div class="container">
     <div id="gallery">
-    <div class="hadding">
-    <h1><%=@car.name%></h1>
-  </div>
+        <div class="hadding">
+            <h1><%=@car.name%></h1>
+        </div>
         <div id="image-gallery">
             <div class="row">
                 <div class="col-md-4 col-12 image">
@@ -271,19 +271,14 @@
                     <h1>Car Description</h1>
 
                     <p>
-                        This Ferrari F8 Tributo is now available to hire in Dubai. Produced in 2021, this costs AED 4000
-                        per day
-                        or AED 102000 per month. Also check for other discounts below. Daily 250 km included in rental.
-                        Refundable deposit of AED 5000 is needed.<br><br>
+                        <%=@car.description%>
+                        <br><br>
 
-                        <strong>Ferrari F8 Tributo Features</strong><br>
-                        This Ferrari F8 Tributo has 2 seats. This car is a 2 doors with such features as usb or usb-c,
-                        blind
-                        spot monitoring, premium audio, build in navigation system, rear camera, apple carplay/android
-                        auto,
-                        heated seats, cruise control etc.<br><br>
+                        <strong><%=@car.name %> Features</strong><br>
+                        <%=@car.feature%>
+                       <br><br>
 
-                        Take this Ferrari F8 Tributo for rent now at <code>shiftgeardubai.ae</code> or get some other
+                        Take this <%=@car.name %>for rent now at <code><a href="http://shiftgeardubai.herokuapp.com/">shiftgeardubai.ae </a></code> or get some other
                         car among
                         a large amount of our cars!
                     </p>
@@ -442,60 +437,7 @@
                 </div>
             </div>
             <div class="col-md-4 col-12">
-                <div class="dtl_form">
-                    <div class="mb-3">
-                        <span class="price002">6,200 AED</span>
-                        <div class="clearfix"></div>
-                        <span class="price001"><%=@car.price%>  AED / DAY</span>
-                    </div>
-
-                    <div class="mb-3">
-                        <label class="title">Set a pick-up date</label>
-                        <input type="date" class="form-control01">
-                    </div>
-                    <div class="mb-3">
-                        <label class="title">Set a drop-off date</label>
-                        <input type="date" class="form-control01">
-                    </div>
-
-                    <div class="mb-3">
-                        <label class="title">First Name</label>
-                        <input type="type" class="form-control01" placeholder="First Name">
-                    </div>
-
-                    <div class="mb-3">
-                        <label class="title">Last Name</label>
-                        <input type="type" class="form-control01" placeholder="Last Name">
-                    </div>
-
-                    <div class="mb-3">
-                        <label class="title">Mobile No</label>
-                        <input type="type" class="form-control01" placeholder="Mobile">
-                    </div>
-                    <div class="mb-3">
-                        <label class="title">Email</label>
-                        <input type="type" class="form-control01" placeholder="Email">
-                    </div>
-
-                    <div class="mb-3">
-                        <label class="title">Driving License Upload</label>
-                        <input class="form-control form-control01" type="file" id="formFile"
-                            placeholder="Driving License Upload">
-                    </div>
-
-                    <div class="mb-3">
-                        <div class="d-grid gap-2 mt-3">
-                            <button type="button" class="btn btn-danger">CHECK Availability</button>
-                        </div>
-                    </div>
-
-                    <ul>
-                        <li><a href="#"><%=image_tag "sc1.png" ,  class: "img-fluid", width:"30" %></a></li>
-                        <li><a href="#"><%=image_tag "sc2.png" ,  class: "img-fluid", width:"30" %></a></li>
-                        <li><a href="#"><%=image_tag "sc3.png" ,  class: "img-fluid", width:"30" %></a></li>
-                    </ul>
-                    <div class="clearfix"></div>
-                </div>
+                <%=render "pages/booking_form"%>
             </div>
         </div>
     </div>
