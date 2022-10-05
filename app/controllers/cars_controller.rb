@@ -23,7 +23,6 @@ class CarsController < ApplicationController
     end
 
     def update
-        byebug
         @car.update(car_params)
         redirect_to car_path(@car)
     end
