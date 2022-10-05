@@ -55,6 +55,8 @@ Rails.application.routes.draw do
   get "ferrari_f8", to: "pages#ferrari_f8"
   get "lamborghini_huracan_evo", to: "pages#lamborghini_huracan_evo"
   get "lamborghini_huracan_evo_spyder", to: "pages#lamborghini_huracan_evo_spyder"
+  get "car_images", to: "cars#car_images"
+  post "upload_images", to: "cars#upload_images"
 
 
 
