@@ -1,6 +1,8 @@
 class PagesController < ApplicationController
     layout "pages_layout"
 
+    before_action :set_nav_links
+
     def index
         @cars = Car.all
     end
@@ -176,5 +178,10 @@ class PagesController < ApplicationController
 
     def lamborghini_huracan_evo_spyder
     end
+
+    private
+        def set_nav_links
+            @cars_link = Car.select(:category_id, :name, :id).group_by(&:category_id)
+        end
 
 end
