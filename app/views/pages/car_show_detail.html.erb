@@ -1,3 +1,12 @@
+<%= content_for :nav_header_box do%>
+    <nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item"><a href="/">Home</a></li>
+      <li class="breadcrumb-item"><a href="#"><%=@car.category.name%> cars</a></li>
+      <li class="breadcrumb-item active" aria-current="page"><%=@car.name %></li>
+    </ol>
+  </nav>
+    <%end%>
 <div class="container">
     <div id="gallery">
         <div class="hadding">
