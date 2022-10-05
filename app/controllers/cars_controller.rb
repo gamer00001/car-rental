@@ -11,6 +11,7 @@ class CarsController < ApplicationController
     end
 
     def create
+        byebug
         @car = Car.create(car_params)
         if @car.errors.size == 0 
             redirect_to @car
@@ -21,6 +22,21 @@ class CarsController < ApplicationController
 
     def edit
     end
+
+    def car_images
+    end
+
+    def upload_images
+        car = Car.find(params[:car_id])
+        params[:images].each { |image_file_name| 
+            byebug
+            car.car_images.create!(
+                image_url: image_file_name,
+            )
+        }
+        redirect_to cars_path
+    end
+    
 
     def update
         @car.update(car_params)
@@ -41,6 +57,6 @@ class CarsController < ApplicationController
             @car = params[:id].present? ? Car.find(params[:id]) :  Car.new  
         end
         def car_params
-            params.require(:car).permit(:name, :model, :number, :price, :image, :category_id, :feature, :description)
+            params.permit(:name, :model, :number, :price, :image, :category_id, :feature, :description, :images)
         end
 end
