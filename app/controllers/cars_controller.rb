@@ -11,7 +11,6 @@ class CarsController < ApplicationController
     end
 
     def create
-        byebug
         @car = Car.create(car_params)
         if @car.errors.size == 0 
             redirect_to @car
@@ -29,9 +28,8 @@ class CarsController < ApplicationController
     def upload_images
         car = Car.find(params[:car_id])
         params[:images].each { |image_file_name| 
-            byebug
             car.car_images.create!(
-                image_url: image_file_name,
+                image_file_name: image_file_name,
             )
         }
         redirect_to cars_path

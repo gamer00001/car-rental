@@ -1,11 +1,10 @@
 <form action="<%= bookings_path%>" enctype="multipart/form-data" method="POST">
     <div class="dtl_form">
         <div class="mb-3">
-            <span class="price002">1,000 AED</span>
             <div class="clearfix"></div>
-            <span class="price001">800 AED / DAY</span>
+            <span class="price001"><%=car.price%> AED / DAY</span>
         </div>
-        <input type="hidden" name="price" value="800">
+        <input type="hidden" name="price" value="<%=car.price%>">
         <div class="mb-3">
             <label class="title">Set a pick-up date</label>
             <input name="start_date" type="date" class="form-control01">

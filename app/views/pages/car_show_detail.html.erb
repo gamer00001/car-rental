@@ -16,7 +16,7 @@
             <div class="row">
                 <div class="col-md-4 col-12 image">
                     <div class="img-wrapper">
-                        <a href=""><%=image_tag @car.image.url, class: "img-responsive" %></a>
+                        <a href=""><%=image_tag @car&.car_images&.first&.image_file_name&.url || @car&.image&.url, class: "img-responsive" %></a>
                         <div class="img-overlay">
                             <i class="fa fa-plus-circle" aria-hidden="true"></i>
                         </div>
@@ -24,14 +24,14 @@
                 </div>
                 <div class="col-md-4 col-12 image">
                     <div class="img-wrapper">
-                        <a href="cr0.jpg"><%=image_tag @car.image.url, class:"img-responsive"%></a>
+                        <a href="cr0.jpg"><%=image_tag @car&.car_images&.second&.image_file_name&.url || @car&.image&.url, class:"img-responsive"%></a>
                         <div class="img-overlay">
                             <i class="fa fa-plus-circle" aria-hidden="true"></i>
                         </div>
                     </div>
                     <div class="clearfix"></div>
                     <div class="img-wrapper">
-                        <a href="cr0.jpg"><%=image_tag @car.image.url, class:"img-responsive"%></a>
+                        <a href="cr0.jpg"><%=image_tag @car&.car_images&.third&.image_file_name&.url || @car&.image&.url, class:"img-responsive"%></a>
                         <div class="img-overlay">
                             <i class="fa fa-plus-circle" aria-hidden="true"></i>
                         </div>
@@ -39,7 +39,7 @@
                 </div>
                 <div class="col-md-4 col-12">
                     <div class="img-wrapper">
-                        <a href="cr1.jpg"><%=image_tag @car.image.url, class:"img-responsive"%></a>
+                        <a href="cr1.jpg"><%=image_tag @car&.car_images&.fourth&.image_file_name&.url || @car&.image&.url, class:"img-responsive"%></a>
                         <div class="img-overlay">
                             <i class="fa fa-plus-circle" aria-hidden="true"></i>
                         </div>
@@ -446,7 +446,7 @@
                 </div>
             </div>
             <div class="col-md-4 col-12">
-                <%=render "pages/booking_form"%>
+                <%=render partial: "pages/booking_form", locals: {car: @car} %>
             </div>
         </div>
     </div>
