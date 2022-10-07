@@ -179,9 +179,47 @@ class PagesController < ApplicationController
     def lamborghini_huracan_evo_spyder
     end
 
+    def checkout
+        @booking = Booking.create(booking_params)
+        if @booking.errors.size == 0 
+            redirect_to "/card_form/" + @booking.id.to_s
+        else
+            redirect_to "/car_show_detail/" + booking_params[:car_id].to_s
+        end
+    end
+
+    def charge
+        @booking = Booking.find(params[:booking_id])
+        charge = Stripe::Charge.create({
+            amount: 1000 || @booking.advance_booking_price,
+            currency: 'AED',
+            description: "Booking #{@booking.id} is generated ",
+            source: params[:stripeToken],
+        })
+        if charge.status == "succeeded"
+            @booking.update({payment_status: "paid"})
+            redirect_to "/thankyou/" +  @booking.id.to_s
+        else
+            flash[:notice] = "Payment Could not Process, Something went Wrong"
+            redirect_to "/car_show_detail/" +  @booking.car_id.to_s
+        end
+    end
+
+    def card_form
+        @booking = Booking.find(params[:id])
+    end
+
+    def thankyou
+        @booking = Booking.find(params[:id])
+    end
+
     private
         def set_nav_links
             @cars_link = Car.select(:category_id, :name, :id).group_by(&:category_id)
+        end
+
+        def booking_params
+            params.require(:booking).permit(:first_name, :last_name, :mobile, :email, :car_id, :driving_license_image, :start_date, :end_date)
         end
 
 end

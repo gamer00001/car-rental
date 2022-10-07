@@ -58,6 +58,11 @@ Rails.application.routes.draw do
   get "car_images", to: "cars#car_images"
   post "upload_images", to: "cars#upload_images"
 
+  post "/checkout", to: "pages#checkout"
+  post "/charge", to: "pages#charge"
+  get "/card_form/:id", to: "pages#card_form"
+  get "thankyou/:id", to: "pages#thankyou"
+
 
 
 
