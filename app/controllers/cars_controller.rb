@@ -55,6 +55,6 @@ class CarsController < ApplicationController
             @car = params[:id].present? ? Car.find(params[:id]) :  Car.new  
         end
         def car_params
-            params.permit(:name, :model, :number, :price, :image, :category_id, :feature, :description, :images)
+            params.require(:car).permit(:name, :model, :number, :price, :image, :category_id, :feature, :description)
         end
 end
